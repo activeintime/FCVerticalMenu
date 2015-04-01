@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef void (^ActionBlock)();
+typedef void (^MenuItemActionBlock)();
 
 @interface FCVerticalMenuItem : NSObject
 
@@ -18,7 +18,7 @@ typedef void (^ActionBlock)();
 @property (nonatomic, assign) NSInteger index;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) UIImage *icon;
-@property(readwrite, copy) ActionBlock actionBlock;
+@property(readwrite, copy) MenuItemActionBlock actionBlock;
 
 
 //style
